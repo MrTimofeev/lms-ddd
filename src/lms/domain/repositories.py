@@ -17,5 +17,5 @@ class EnrollmentRepository(ABC):
         raise NotImplementedError
     
     @abstractmethod
-    async def get_by_id(self, enrollment_id: EnrollmentId) -> Optional[Enrollment]
+    async def get_by_id(self, enrollment_id: EnrollmentId) -> Optional[Enrollment]:
         raise NotImplementedError

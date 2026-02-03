@@ -25,13 +25,13 @@ class EnrollInCourseUseCase:
             raise ValueError(f"Course {command.course_id} not found")
         
         # 2. пытаемся создать зачисление (фабрика проверит статус)
-        from datetime import datetime
+        from datetime import datetime, timezone
         import uuid
         enrollment = create_enrollment(
             enrollment_id=EnrollmentId(str(uuid.uuid4())),
             user_id=command.user_id,
             course=course,
-            enrolled_at=datetime.utcnow(),
+            enrolled_at=datetime.now(timezone.utc),
         )
         
         # 3. Сохраняем
