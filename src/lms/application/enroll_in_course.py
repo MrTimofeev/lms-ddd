@@ -1,10 +1,9 @@
 from typing import Optional
 
-from lms.domain.course import CourseId, Course
-from lms.domain.enrollment import create_enrollment, UserId, EnrollmentId
+from lms.domain.course import Course
+from lms.domain.enrollment import create_enrollment, EnrollmentId
 from lms.domain.repositories import CourseRepository, EnrollmentRepository
 from lms.application.dto import EnrollInCourseCommand
-from lms.domain.exceptions import CourseNotPublishedError
 
 
 class EnrollInCourseUseCase:
