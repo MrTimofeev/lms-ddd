@@ -11,5 +11,3 @@ class Lesson:
     title: str
     order: int
     
-from .course import CourseId # чтобы избежать циклического импорта 
-# TODO: узнать как это работает
