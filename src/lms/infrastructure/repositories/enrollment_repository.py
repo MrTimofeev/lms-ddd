@@ -4,7 +4,7 @@ from sqlalchemy import select
 
 from lms.domain.repositories import EnrollmentRepository
 from lms.domain.enrollment import Enrollment, EnrollmentId, UserId, CourseId
-from lms.infrastructure.database.model import EnrollmentDB
+from lms.infrastructure.database.models import EnrollmentDB
 
 
 class SQLAlchemyEnrollmentRepository(EnrollmentRepository):

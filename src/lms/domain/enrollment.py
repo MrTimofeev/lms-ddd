@@ -17,7 +17,6 @@ class Enrollment:
     enrolled_at: datetime
 
 
-
 def create_enrollment(
     enrollment_id: EnrollmentId,
     user_id: UserId,

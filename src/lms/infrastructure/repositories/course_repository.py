@@ -4,7 +4,7 @@ from sqlalchemy import select
 
 from lms.domain.repositories import CourseRepository
 from lms.domain.course import Course, CourseId, CourseStatus
-from lms.infrastructure.database.model import CourseDB
+from lms.infrastructure.database.models import CourseDB
 
 class SQLAlchemyCourseRepository(CourseRepository):
     def __init__(self, session: AsyncSession):

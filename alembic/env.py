@@ -6,7 +6,7 @@ from sqlalchemy import pool
 from alembic import context
 
 from lms.infrastructure.database.session import Base, sync_engine
-from lms.infrastructure.database.model import CourseDB, EnrollmentDB
+from lms.infrastructure.database.models import CourseDB, EnrollmentDB
 
 config = context.config
 
